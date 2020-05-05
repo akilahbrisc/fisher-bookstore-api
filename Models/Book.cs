@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Fisher.Bookstore.Models
@@ -7,5 +8,11 @@ namespace Fisher.Bookstore.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public List<Author> Authors { get; set; }
+        public double Price { get; set; }
+
+        public void ApplyMemberDiscount()
+        {
+            Price = Price * .90;
+        }
     }
 }

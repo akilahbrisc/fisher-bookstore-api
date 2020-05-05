@@ -4,7 +4,7 @@ using Fisher.Bookstore.Models;
 namespace Fisher.Bookstore.Services
 {
 
-    public interface IBooksRepository
+    public interface IBooksRepository 
     {
         IEnumerable<Book> GetBooks();
         Book GetBook(int bookId);
